@@ -1,0 +1,60 @@
+# Created at 2023-12-27T14:08:54.506
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+
+# Created at 2023-12-27T14:08:54.506
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:118)
+
+# Created at 2023-12-27T14:08:54.506
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+
+# Created at 2023-12-27T14:08:54.506
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:560)
+
+# Created at 2023-12-27T14:08:54.507
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:572)
+
+# Created at 2023-12-27T14:08:54.507
+Caused by: java.lang.RuntimeException: Class java/lang/UnknownError could not be instrumented.
+
+# Created at 2023-12-27T14:08:54.507
+	at org.jacoco.agent.rt.internal_28bab1d.core.runtime.ModifiedSystemClassRuntime.createFor(ModifiedSystemClassRuntime.java:140)
+
+# Created at 2023-12-27T14:08:54.507
+	at org.jacoco.agent.rt.internal_28bab1d.core.runtime.ModifiedSystemClassRuntime.createFor(ModifiedSystemClassRuntime.java:101)
+
+# Created at 2023-12-27T14:08:54.507
+	at org.jacoco.agent.rt.internal_28bab1d.PreMain.createRuntime(PreMain.java:55)
+
+# Created at 2023-12-27T14:08:54.507
+	at org.jacoco.agent.rt.internal_28bab1d.PreMain.premain(PreMain.java:47)
+
+# Created at 2023-12-27T14:08:54.507
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+
+# Created at 2023-12-27T14:08:54.507
+	... 3 more
+
+# Created at 2023-12-27T14:08:54.508
+Caused by: java.lang.NoSuchFieldException: $jacocoAccess
+
+# Created at 2023-12-27T14:08:54.508
+	at java.base/java.lang.Class.getField(Class.java:2284)
+
+# Created at 2023-12-27T14:08:54.508
+	at org.jacoco.agent.rt.internal_28bab1d.core.runtime.ModifiedSystemClassRuntime.createFor(ModifiedSystemClassRuntime.java:138)
+
+# Created at 2023-12-27T14:08:54.508
+	... 7 more
+
+# Created at 2023-12-27T14:08:54.508
+*** java.lang.instrument ASSERTION FAILED ***: "!errorOutstanding" with message Outstanding error when calling method in invokeJavaAgentMainMethod at src/java.instrument/share/native/libinstrument/JPLISAgent.c line: 627
+
+# Created at 2023-12-27T14:08:54.508
+*** java.lang.instrument ASSERTION FAILED ***: "success" with message invokeJavaAgentMainMethod failed at src/java.instrument/share/native/libinstrument/JPLISAgent.c line: 466
+
+# Created at 2023-12-27T14:08:54.508
+*** java.lang.instrument ASSERTION FAILED ***: "result" with message agent load/premain call failed at src/java.instrument/share/native/libinstrument/JPLISAgent.c line: 429
+
+# Created at 2023-12-27T14:08:54.616
+/bin/sh: line 1: 84983 Abort trap: 6           /opt/homebrew/Cellar/openjdk/21/libexec/openjdk.jdk/Contents/Home/bin/java '-javaagent:/Users/shaikferozhussain/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/Users/shaikferozhussain/Desktop/zmb2bapimanagementdev/unit-tests/target/coverage-reports/jacoco.exec,includes=*,excludes=org.apache.*' -Xmx1024m -Dorg.slf4j.simpleLogger.defaultLogLevel=info -jar /Users/shaikferozhussain/Desktop/zmb2bapimanagementdev/unit-tests/target/surefire/surefirebooter13308563059635982770.jar /Users/shaikferozhussain/Desktop/zmb2bapimanagementdev/unit-tests/target/surefire 2023-12-27T14-08-54_296-jvmRun1 surefire8418120980811907297tmp surefire_010952584047193727958tmp
+
